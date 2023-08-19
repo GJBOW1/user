@@ -86,14 +86,11 @@ class User:
 user1 = User("Tom", "Merrilin", "wheeloftime@legend.com", 55)
 user2 = User("Rand", "Althor", "dragonmount@legend.com", 20)
 user3 = User("Mat", "Cauthon", "wolfnecklace@legend.com", 21)
-user1.enroll()
-user1.display_info()
-user1.spend_points(50)
-user1.display_info()
-user2.enroll()
-user2.display_info()
-user2.spend_points(80)
-user2.display_info()
+
+user1.enroll().spend_points(50).display_info()
+user2.enroll().spend_points(80).display_info()
+
+
 user1.display_info()
 user2.display_info()
 user3.display_info()
